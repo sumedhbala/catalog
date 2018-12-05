@@ -1,0 +1,29 @@
+# Compiled python files
+*.pyc
+
+# ignore the mac .DS_Store files
+.DS_Store
+
+# Eclipse projects
+.project
+.pydevproject
+.settings/
+
+# PyCharm project meta files
+.idea
+
+# Emacs specific files
+\#*\#
+*~
+flycheck_*.py
+.dir-locals.el
+.projectile
+
+#virtualenv
+venv/
+catalog/
+
+# Python package build info
+.eggs
+*.egg-info
+

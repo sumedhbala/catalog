@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="h3 col-12">
+    {{ item }}
+  </div>
+  <div class="text-wrap col-12">
+    {{ description }} </div>
+  <form class="col-12" action="" method="POST">
+    <button type="submit" class="btn btn-primary m-1" formaction="/items/edit?item={{id}}"> Edit </button>
+    <button type="submit" class="btn btn-primary m-1" data-toggle="confirmation" formaction="/items/delete?item={{id}}" data-title="Delete Item"> Delete </button> </form>
+</div>
+{% endblock %}
+{% block javascript %}
+<script src="{{ url_for('static', filename='js/datatoggle.js' ) }}">
+</script>
+{% endblock %}
